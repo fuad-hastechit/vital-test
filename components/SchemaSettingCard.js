@@ -63,7 +63,13 @@ const SchemaSettingCard = ({
             (isProFeature ? "md:h-[275px]" : "md:h-[195px]")
           }
         >
-          <p>Image</p>
+          <img
+            className="object-cover object-left-top w-full h-full zoomable-image"
+            src={imgSrc}
+            alt={imgAlt}
+            loading="lazy"
+            ref={imageRef}
+          />
         </div>
 
         <div className="w-full md:w-[65%] px-[20px] py-[18px]">
