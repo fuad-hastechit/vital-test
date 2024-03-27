@@ -16,6 +16,7 @@ import SchemaSettingCard from "@components/SchemaSettingCard";
 import ProtectedStoreBanner from "@components/common/ProtectedStoreBanner";
 
 // create a constant object for schema image urls
+
 const imageUrls = {
   homePageSchema: "/images/home_page_schema.webp",
   sitelinksSchema: "/images/sitelink_searchbox_schema.webp",

@@ -65,7 +65,7 @@ const SchemaSettingCard = ({
         >
           <img
             className="object-cover object-left-top w-full h-full zoomable-image"
-            src={imgSrc}
+            src={`https://raw.githubusercontent.com/fuad-hastechit/vital-test/main/public${imgSrc}`}
             alt={imgAlt}
             loading="lazy"
             ref={imageRef}
