@@ -2,6 +2,9 @@ import App from "next/app";
 import { onCLS, onFID, onLCP } from "web-vitals";
 import { AppProvider } from "@shopify/polaris";
 
+import "css/styles.css";
+import "scss/styles.scss";
+
 import { Base64 } from "js-base64";
 
 import translations from "@shopify/polaris/locales/en.json";
