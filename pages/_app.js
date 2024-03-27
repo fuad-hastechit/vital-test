@@ -1,5 +1,5 @@
 import { useEffect, useContext, useState, useCallback, useRef } from "react";
-import {onCLS, onFID, onLCP} from 'web-vitals';
+import { onCLS, onFID, onLCP } from "web-vitals";
 import App from "next/app";
 import {
   AppProvider,
@@ -13,7 +13,6 @@ import {
 import { Provider, useAppBridge } from "@shopify/app-bridge-react";
 import { Base64 } from "js-base64";
 import { useRouter } from "next/router";
-import TawkMessengerReact from "@tawk.to/tawk-messenger-react";
 import useSWR from "swr";
 import "@shopify/polaris/dist/styles.css";
 import translations from "@shopify/polaris/locales/en.json";
@@ -56,7 +55,6 @@ const queryClient = new QueryClient({
 });
 
 function VerifyWrapper(props) {
-  const tawkMessengerRef = useRef();
   const router = useRouter();
   const app = useAppBridge();
   const history = History.create(app);
@@ -147,20 +145,6 @@ function VerifyWrapper(props) {
       ),
     },
   ];
-
-  const tawkOnLoad = useCallback(() => {
-    const tawkCustomAttribute = {
-      "App Name": "8ta-8d331m",
-      "Store URL": "gtyorpj6ie",
-      Plan: "s4m5uhqwq4",
-    };
-
-    tawkMessengerRef.current.setAttributes({
-      [tawkCustomAttribute["App Name"]]: "Rich Snippets for SEO",
-      [tawkCustomAttribute["Store URL"]]: shopName,
-      [tawkCustomAttribute.Plan]: planName,
-    });
-  }, [planName, shopName]);
 
   const handleTabChange = useCallback(
     (selectedTabIndex) => {
@@ -332,12 +316,6 @@ function VerifyWrapper(props) {
           <br />
         </>
       )}
-      <TawkMessengerReact
-        propertyId="647470fa74285f0ec46e3096"
-        widgetId="1h1jg1m2u"
-        ref={tawkMessengerRef}
-        onLoad={tawkOnLoad}
-      />
 
       {planName ? <Component {...props} /> : <Plan {...props} />}
 
@@ -381,7 +359,6 @@ function MiddleComponents({ Component, host, pageProps }) {
 }
 
 class MyApp extends App {
-
   componentDidMount() {
     function sendToAnalytics(metric) {
       console.log("LCP: ", metric.value / 1000, " seconds");
