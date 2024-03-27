@@ -126,7 +126,7 @@ app.prepare().then(async () => {
   router.get("(/_next/static/.*)", handleRequest); // Static content is clear
   router.get("/_next/webpack-hmr", handleRequest); // Webpack content is clear
 
-  router.get("(.*)", verifyRequestMiddleware, handleRequest); // Everything else must have sessions
+  router.get("(.*)", handleRequest); // Everything else must have sessions
 
   server.use(router.allowedMethods());
   server.use(router.routes());
