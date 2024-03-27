@@ -1,0 +1,100 @@
+/* --------------------- ACTIVATION BANNER ------------------- */
+.activation-banner .Polaris-Banner__Content {
+  display: grid;
+  align-items: center;
+
+  gap: 10px;
+  grid-template-columns: 1fr auto;
+}
+
+.activation-banner .dash-info-button-wrap {
+  margin-top: -18px !important;
+  margin-right: 0px !important;
+}
+
+@media only screen and (max-width: 1200px) {
+  .activation-banner .Polaris-Banner__Content {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+
+    gap: 15px;
+  }
+
+  .activation-banner .dash-info-button-wrap {
+    margin-top: 0 !important;
+    margin-right: 0 !important;
+  }
+}
+
+/* ------------------------ REVIEW BANNER -------------------- */
+
+.review-banner-reaction {
+  margin-top: 10px;
+}
+
+.review-banner-reaction a {
+  font-weight: 500;
+
+  position: relative;
+
+  margin-right: 35px;
+}
+
+.review-banner-reaction a span {
+  position: absolute;
+  top: 0;
+  right: -21px;
+
+  display: inline-block;
+}
+
+.review-banner-wrapper .Polaris-Banner__Content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.review-banner-wrapper .Polaris-ButtonGroup {
+  margin-top: -30px !important;
+  margin-right: 2px;
+}
+
+.Polaris-Banner--hasDismiss {
+  padding-right: 1.8rem;
+}
+
+.Polaris-Banner--withinPage .Polaris-Banner__Dismiss {
+  right: 0.35rem;
+  top: 0.35rem;
+  position: absolute;
+}
+
+@media only screen and (max-width: 1000px) {
+  .review-banner-wrapper .Polaris-Banner__Content {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+
+    gap: 10px;
+  }
+
+  .review-banner-wrapper .Polaris-ButtonGroup {
+    margin-top: 0 !important;
+    margin-right: 0 !important;
+  }
+
+  .Polaris-Banner--withinPage .Polaris-Banner__Dismiss {
+    right: 2rem;
+    top: 2rem;
+    position: absolute;
+  }
+}
+
+/* ---------------------- REVIEW MODAL ----------------------- */
+.Polaris-Modal-Header--titleHidden {
+  padding: 1.6rem !important;
+}
+
+.review-modal-body .Polaris-Icon--colorSuccess {
+  scale: 1.5;
+}

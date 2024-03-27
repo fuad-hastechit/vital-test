@@ -1,0 +1,97 @@
+<style>
+  * {
+    font-family: "Open Sans", "Helvetica Neue", "Helvetica", Helvetica, Arial,
+      sans-serif;
+
+    box-sizing: border-box;
+    margin: 0;
+
+    color: #294661;
+  }
+
+  ul {
+    padding: 0;
+  }
+
+  li:nth-child(odd) {
+    background: #f4f6f899;
+  }
+
+  li {
+    padding-top: 15px;
+    padding-right: 15px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+  }
+
+  .single-data-header {
+    font-size: 16px;
+    font-weight: bold;
+
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
+
+  .firstUL li {
+    list-style: none;
+  }
+
+  span.badge {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 30px;
+
+    margin-right: 5px;
+    margin-bottom: 10px;
+    padding: 5px;
+    padding-right: 10px;
+    padding-left: 10px;
+
+    border-radius: 50px;
+    background: #b4e1fa;
+  }
+
+  span.badge.success {
+    background: #bbe5b3;
+  }
+
+  span.badge.critical {
+    background: #fead9a;
+  }
+
+  span.badge.warning {
+    background: #ffc58b;
+  }
+
+  span.badge.attention {
+    background: #ffea8a;
+  }
+</style>
+
+<table style="width: 100%; background: #fdfdfd" width="100%">
+  <tr>
+    <td></td>
+    <td style="width: 600px; max-width: 600px; margin: 0 auto; padding: 30px 0" width="600">
+      <div style="text-align: center; margin-bottom: 30px">
+        <h1>{{APP_NAME}} App</h1>
+      </div>
+      <div style="
+          width: 100%;
+          background: white;
+          border: 1px solid #f0f0f0;
+          padding: 40px;
+        ">
+        <h3>You Have Uninstalled The {{APP_NAME}} App</h3>
+        <div style="border-top: 1px solid #d3dbe2; margin-top: 10px"></div>
+        <br />
+        <h4 style="line-height: 29px">
+          We noticed you uninstalled the {{APP_NAME}} App. We're sorry
+          to see you go. If you have any feedback or questions we're more than
+          happy to help you, please email {{APP_EMAIL}}
+        </h4>
+      </div>
+    </td>
+    <td></td>
+  </tr>
+</table>

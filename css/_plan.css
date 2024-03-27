@@ -1,0 +1,130 @@
+.Polaris-Icon--colorSuccess svg {
+  fill: var(--p-icon-success) !important;
+}
+
+.Polaris-Icon--colorCritical svg {
+  fill: var(--p-icon-critical) !important;
+}
+
+.pricing-card-wrapper {
+  position: relative;
+}
+
+.pricing-card-wrapper .hso-pricing-discount {
+  font-weight: 700;
+
+  position: absolute;
+  top: 25px;
+  left: 25px;
+
+  color: #27ae60;
+}
+
+.pricing-card-wrapper .Polaris-Badge--statusAttention {
+  font-weight: 500;
+
+  position: absolute;
+  top: 20px;
+  right: 0;
+
+  padding: 8px 10px;
+
+  border-radius: 0;
+}
+
+.plan-feature-wrapper {
+  margin-top: 20px;
+}
+
+.plan-feature-wrapper .Polaris-ExceptionList__Item {
+  margin-bottom: 10px;
+
+  text-align: left;
+}
+
+.plan-feature-wrapper .Polaris-ExceptionList__Icon .Polaris-Icon {
+  width: 1.8rem;
+  height: 1.8rem;
+  margin-right: 10px;
+}
+
+.plan-feature-wrapper .Polaris-ExceptionList__Description {
+  font-size: 14px;
+
+  color: #202223;
+}
+
+.pricing-card-wrapper .Polaris-Card {
+  min-height: 480px;
+  padding-bottom: 40px;
+}
+
+.pricing-card-wrapper .Polaris-Button--sizeLarge {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+
+  width: 93%;
+
+  transform: translateX(-50%);
+}
+
+.pricing-card-wrapper--free {
+  margin-top: 45px;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .pricing-card-wrapper--free {
+    margin-top: 0;
+    margin-bottom: 50px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .pricing-card-wrapper--free {
+    margin-top: 0;
+    margin-bottom: 50px;
+  }
+}
+
+.pricing-plan-chooser {
+  margin-bottom: 30px;
+}
+
+.pricing-plan-chooser .Polaris-ButtonGroup--segmented {
+  justify-content: center;
+}
+
+.pricing-card-wrapper .Polaris-Card {
+  text-align: center;
+}
+
+.pricing-card-wrapper .Polaris-Card .Polaris-Card__Header {
+  padding-top: 4rem;
+}
+
+.pricing-plan-chooser .Polaris-Button.Polaris-Button--pressed {
+  border-color: var(--p-action-primary);
+  background: var(--p-action-primary);
+}
+
+/* .plan-feature-wrapper .Polaris-ExceptionList__Icon {
+    display: none;
+  } */
+
+.pricing-plan-chooser {
+  margin-bottom: 10px;
+}
+
+.pricing-plan-chooser .Polaris-ButtonGroup--segmented {
+  justify-content: end;
+}
+
+.cupon-code-wrapper .Polaris-Layout__Annotation {
+  margin-top: 0px;
+  margin-left: 0px;
+}
+
+.cupon-code-wrapper .Polaris-Connected__Item--primary {
+  margin-right: 1.25rem;
+}

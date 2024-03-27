@@ -1,0 +1,13 @@
+<script type="application/ld+json" id="gropulse_rich_snippets_sitelinks_searchbox" class="gropulse-rich-snippets-schema">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "url": "{{ shop.url }}",
+    "name": {{ shop.name | json }},
+    "potentialAction": {
+        "@type": "SearchAction",
+        "target": "{{ shop.url }}/search?q={query}",
+        "query-input": "required name=query"
+    }
+  }
+</script>

@@ -1,0 +1,20 @@
+{% capture newLine %} {% endcapture %}
+<script type="application/ld+json" id="gropulse_rich_snippets_carousel" class="gropulse-rich-snippets-schema">
+  {
+    "@context": "http://schema.org",
+    "@type": "ItemList",
+    "itemListElement": [
+      {%- for product in collection.products -%}
+        {
+          "@type": "ListItem",
+          "position": {{ forloop.index }},
+          "name": {{ product.title | json }},
+          "url": {{ shop.url | append: product.url | json }},
+          "description": {{ product.description | strip_html | json }},
+          "image": "{{ product.featured_image | img_url: '1024x1024' }}"
+        }
+      {%- unless forloop.last -%},{%- endunless -%}
+      {%- endfor -%}
+    ]
+  }
+</script>

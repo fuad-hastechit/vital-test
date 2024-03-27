@@ -1,0 +1,20 @@
+{
+  "free": {
+    "name": "Free Plan",
+    "price": 0.1,
+    "trial_days": 0,
+    "test": false
+  },
+  "monthly": {
+    "name": "Monthly Plan",
+    "price": 8.99,
+    "trial_days": 7,
+    "test": false
+  },
+  "yearly": {
+    "name": "Yearly Plan",
+    "price": 59.88,
+    "trial_days": 7,
+    "test": false
+  }
+}

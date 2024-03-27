@@ -1,0 +1,233 @@
+.Plan {
+  .pricing-card-wrapper {
+    position: relative;
+    .ht-ogmeta-discount {
+      font-weight: 700;
+
+      position: absolute;
+      top: 25px;
+      left: 25px;
+
+      color: #27ae60;
+    }
+
+    .Polaris-Badge {
+      &--statusAttention {
+        font-weight: 500;
+
+        position: absolute;
+        top: 20px;
+        right: 0;
+
+        padding: 8px 10px;
+
+        border-radius: 0;
+      }
+    }
+  }
+}
+
+.Polaris-FormLayout {
+  margin-top: 0;
+}
+
+/* how to use */
+.Polaris-Card {
+  position: relative;
+  .accordion-wrapper {
+    & > button {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+    }
+  }
+
+  iframe {
+    width: 100%;
+    height: 500px;
+  }
+}
+
+.support-button {
+  position: absolute;
+  top: 7px;
+  right: 22px;
+
+  display: block;
+}
+
+@media only screen and (max-width: 1000px) {
+  .support-button {
+    display: none;
+  }
+}
+
+.schema-card-wrapper {
+  position: relative;
+  .Polaris-Badge {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+}
+
+.pricing-plan-chooser {
+  margin-bottom: 30px;
+}
+.pricing-plan-chooser .Polaris-ButtonGroup--segmented {
+  justify-content: center;
+}
+
+.pricing-card-wrapper .Polaris-Card {
+  text-align: center;
+}
+
+.pricing-card-wrapper .Polaris-Card .Polaris-Card__Header {
+  padding-top: 4rem;
+}
+
+.pricing-plan-chooser .Polaris-Button.Polaris-Button--pressed {
+  border-color: var(--p-action-primary);
+  background: var(--p-action-primary);
+}
+
+.pricing-plan-chooser {
+  margin-bottom: 10px;
+}
+
+.pricing-plan-chooser .Polaris-ButtonGroup--segmented {
+  justify-content: end;
+}
+
+.dash-info-button-wrap .Polaris-Button .Polaris-Icon {
+  display: inline-block;
+
+  width: 13px;
+  height: 13px;
+}
+
+.dash-info-button-wrap .Polaris-Button:hover svg,
+.dash-info-button-wrap .Polaris-Button svg {
+  fill: var(--p-icon);
+}
+
+.recommend-app-area {
+  margin-top: 30px;
+}
+.recommend-app-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  margin-bottom: -20px;
+}
+.recommend-app-wrapper .Polaris-Card {
+  flex-basis: calc(50% - 10px);
+
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+@media screen and (max-width: 576px) {
+  .recommend-app-wrapper .Polaris-Card {
+    flex-basis: 100%;
+  }
+}
+.recommend-app-wrapper .single-recommend-app {
+  text-align: center;
+}
+.recommend-app-wrapper .single-recommend-app__thumb {
+  display: inline-block;
+}
+.recommend-app-wrapper .single-recommend-app__thumb img {
+  border-radius: 5px;
+  box-shadow: 0 0 10px 0 #637381;
+}
+.recommend-app-wrapper .single-recommend-app__details {
+  margin-top: 10px;
+}
+.recommend-app-wrapper .single-recommend-app__details .Polaris-Heading {
+  margin-bottom: 5px;
+}
+.recommend-app-wrapper .single-recommend-app__details .Polaris-Heading a {
+  text-decoration: none;
+
+  color: #212b36;
+}
+.recommend-app-wrapper .single-recommend-app__details .Polaris-Heading a:hover {
+  color: #008060;
+}
+.recommend-app-wrapper .single-recommend-app__details .Polaris-Heading a:after {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  content: "";
+}
+.recommend-app-wrapper .single-recommend-app__details p {
+  font-size: 1.08em;
+  line-height: 1.6em;
+}
+
+/* ---------------------------- FAQ Modal ---------------------------- */
+.faq-form {
+  input[id="shop_url"]:focus {
+    outline: none !important;
+  }
+  .Polaris-Stack__Item #url_path + .Polaris-Stack__Item {
+    margin-left: none !important;
+  }
+}
+
+/* ---------------------------- Video Modal Activator Button ---------------------------- */
+
+.button-video-modal-wrapper {
+  .Polaris-Button.Polaris-Button--outline.Polaris-Button--monochrome {
+    color: var(--p-action-primary);
+    border-color: var(--p-action-primary);
+    box-shadow: 0 0 0 0.1rem var(--p-action-primary);
+
+    .Polaris-Button__Text {
+      display: flex;
+    }
+
+    .Polaris-Icon {
+      display: inline-block;
+      color: var(--p-action-primary);
+      width: 15px;
+      height: 15px;
+      margin-right: 5px;
+    }
+  }
+}
+
+.Polaris-Banner {
+  .Polaris-Banner__Ribbon {
+    padding-top: 7px !important;
+  }
+}
+
+.zoomable-image.medium-zoom-image--opened {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* ---------------------------- FAQ Index Table ---------------------------- */
+.faq-list-table {
+  .Polaris-IndexTable__TableHeading--first,
+  .Polaris-IndexTable__TableCell--first {
+    display: none;
+  }
+  th.Polaris-IndexTable__TableHeading--second {
+    padding-left: 20px !important;
+  }
+  .Polaris-IndexTable__TableRow .Polaris-IndexTable__TableCell:nth-child(2) {
+    padding-left: 20px !important;
+    max-width: 200px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
