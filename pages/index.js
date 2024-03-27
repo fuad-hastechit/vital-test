@@ -17,14 +17,14 @@ import ProtectedStoreBanner from "@components/common/ProtectedStoreBanner";
 
 // create a constant object for schema image urls
 const imageUrls = {
-  homePageSchema: "/images/home_page_schema.png",
-  sitelinksSchema: "/images/sitelink_searchbox_schema.png",
-  productPageSchema: "/images/product_page_schema.png",
-  collectionPageSchema: "/images/product_category_breadcrumb.png",
-  articlePageSchema: "/images/article_page_schema.png",
-  blogPageSchema: "/images/blog_page_schema.png",
-  faqSchema: "/images/faq_schema.png",
-  carouselSchema: "/images/carousel_schema.png",
+  homePageSchema: "/images/home_page_schema.webp",
+  sitelinksSchema: "/images/sitelink_searchbox_schema.webp",
+  productPageSchema: "/images/product_page_schema.webp",
+  collectionPageSchema: "/images/product_category_breadcrumb.webp",
+  articlePageSchema: "/images/article_page_schema.webp",
+  blogPageSchema: "/images/blog_page_schema.webp",
+  faqSchema: "/images/faq_schema.webp",
+  carouselSchema: "/images/carousel_schema.webp",
 };
 
 const Index = () => {
