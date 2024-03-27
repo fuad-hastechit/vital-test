@@ -1,4 +1,5 @@
 import { useEffect, useContext, useState, useCallback, useRef } from "react";
+import {onCLS, onFID, onLCP} from 'web-vitals';
 import App from "next/app";
 import {
   AppProvider,
@@ -380,6 +381,15 @@ function MiddleComponents({ Component, host, pageProps }) {
 }
 
 class MyApp extends App {
+
+  componentDidMount() {
+    function sendToAnalytics(metric) {
+      console.log("LCP: ", metric.value / 1000, " seconds");
+      console.log("Metric: ", metric);
+    }
+    onLCP(sendToAnalytics);
+  }
+
   render() {
     const { Component, pageProps, host } = this.props;
 
